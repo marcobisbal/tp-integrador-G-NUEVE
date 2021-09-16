@@ -12,7 +12,7 @@ body {
 .agrupar {
     background-color: rgb(184, 2, 2);
     width: 1000px;
-    border: 1px solid rgb(253, 253, 253);
+    border: 3px dotted yellow;
     margin: 20px auto;
 }
 .menu ul {
@@ -33,13 +33,12 @@ body {
     color: black;  
 }
 article {
-    background-color: rgb(255, 116, 2);
     width: 180px;
     height: 300px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    border: 1px solid rgb(253, 253, 253);
     padding: 10px;
 }
 h2 {
@@ -47,7 +46,7 @@ h2 {
     margin-left: 15px;
 }
 main {
-    background-color: red;
+    border: 3px dotted yellow;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -60,7 +59,8 @@ main {
     padding: 10px;
 }
 footer {
-    border: 1px solid rgb(253, 253, 253);
+    border: 3px dotted yellow;
+    margin-top: 15px;
 }
 .seguinos {
     font-size: 30px;
@@ -74,5 +74,5 @@ footer {
 .imga1 {
     width: 100%;
     align-items: center;
-    margin-left: 65px;
+    margin-top: 30px;
 }
