@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/detailmovie.css">
     <link rel="stylesheet" href="css/footer-header.css">
-   
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <title>Detalles de la película</title>
 
 </head>
@@ -22,26 +24,25 @@
                 <nav class="menu">
                     <ul>
                         <div class="inicio">
-                            <li><a href="index_inicio.html">Inicio</a></li>                                                 
+                            <li><a href="index_inicio.html">Inicio</a></li>
                             <li><a href="generos.html">Generos</a></li>
                             <li><a href="detalle-generos.html">Detalle Generos</a></li>
                             <li><a href="detail-movie.html">Detalle Peliculas</a></li>
                             <li><a href="detail-series.html">Detalle Series</a></li>
                             <li><a href="favoritos.html">Favoritos</a></li>
                             <li><a href="resultadosdebusqueda.html">Resultado de Busqueda></a></li>
-                           
+
                         </div>
                     </ul>
 
                 </nav>
-                <p class="buscador">
-
-                    Búsqueda de Peliculas o Series: <input type="search" name="busquedapeliculasoseries"
-                        placeholder="pelicula, serie, director...">
-
-                    <input type="submit" value="Buscar">
-
-                </p>
+                <div class="conyheaderbuscador">
+                    <form action="./resultadosdebusqueda.html" method="get">
+                        <input type="text" name="buscador" id="buscador" placeholder="Buscar">
+                        <imput type="submit" value="Buscar">
+                            <i class="fas fa-search-minus"></i>
+                    </form>
+                </div>
             </div>
     </div>
     </header>
@@ -65,7 +66,7 @@
                         <li class="objeto-de-lista">Lanzamiento: 22 de Junio de 2007</li>
                         <li class="objeto-de-lista">Duración: 2hs 9min</li>
                         <li class="objeto-de-lista">
-                            <a href="#">Género: Acción</a>
+                            <a href="detalle-generos.html">Género: Acción</a>
                         </li>
                         <li class="objeto-de-lista">
                             <a href="favoritos.html">+Agregar a favoritos ★</a>

@@ -1,11 +1,11 @@
-.list-container{
+.list-container {
     display: flex;
     flex-direction: row;
-    list-style-type: none ;
+    list-style-type: none;
     justify-content: center;
 }
 
-.list-container li{
+.list-container li {
     background-color: rgb(255, 208, 0);
     height: 40px;
     width: 400px;
@@ -13,8 +13,7 @@
     align-items: center;
     margin: 10px;
     border-radius: 20px;
-    
+
 }
-@media screen {
-    
-}
+
+@media screen {}

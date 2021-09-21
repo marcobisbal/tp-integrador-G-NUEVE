@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle generos</title>
-    <link rel="stylesheeth" href="./css/detallesgeneros.css">
-    <link rel="stylesheeth" href="./css/footer-header.css">
+    <link rel="stylesheet" href="css/detallesgeneros.css">
+    <link rel="stylesheet" href="css/footer-header.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -31,22 +33,42 @@
                 </ul>
 
             </nav>
-            <p class="buscador">
-
-                Búsqueda de Peliculas o Series: <input type="search" name="busquedapeliculasoseries"
-                    placeholder="pelicula, serie, director...">
-
-                <input type="submit" value="Buscar">
-
-            </p>
+            <div class="conyheaderbuscador">
+                <form action="./resultadosdebusqueda.html" method="get">
+                    <input type="text" name="buscador" id="buscador" placeholder="Buscar">
+                    <imput type="submit" value="Buscar">
+                        <i class="fas fa-search-minus"></i>
+                </form>
+            </div>
         </div>
 
     </header>
-    <h2>Acción</h2>
-    <ul>
-        <div class="Generoaccion"></div>
-        <li><a img
-    </ul>
+    <h1>Acción</h1>
+    <h3>Series y Peliculas de este genero</h3>
+    <div class="guardaArticulos">
+        <article>
+            <img class="imga1" src="img/inicio/gameofthrones.jpg" alt="Game Of Thrones">
+            <h3>Game Of Thrones</h3>
+        </article>
+        <article>
+            <img class="imga1" src="img/inicio/zone414.jpg" alt="zone 414">
+            <h3>Zone 414</h3>
+        </article>
+        <article>
+            <img class="imga1" src="img/inicio/lukecage.jpg" alt="Luke Cage">
+            <a class="link" href="detail-series.html">Luke Cage</a>
+        </article>
+        <article>
+            <img class="imga1" src="img/inicio/prey.jpg" alt="Prey">
+            <h3>Prey</h3>
+        </article>
+        <article>
+            <img class="imga1" src="img/inicio/durodematar.jpg" alt="Duro de Matar">
+            <a class="link" href="detail-movie.html">Duro de Matar 4.0</a>
+        </article>
+    </div>
+
+
 
 
 

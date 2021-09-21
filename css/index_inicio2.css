@@ -1,13 +1,14 @@
-
 .agrupar {
     width: 1000px;
     margin: 3px;
 }
+
 .menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 .menu ul li {
     padding: 5px 20px;
     font: bold 16px helvetica;
@@ -24,16 +25,19 @@ article {
     justify-content: center;
     padding: 10px;
 }
+
 h2 {
     text-align: left;
-    
+
 }
+
 main {
 
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
 }
+
 .guardaArticulos {
     display: flex;
     width: 100%;

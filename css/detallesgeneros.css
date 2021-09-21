@@ -1,0 +1,42 @@
+article {
+    width: 180px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+h2 {
+    text-align: left;
+
+}
+
+main {
+
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.guardaArticulos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.imga1 {
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* celular */
+@media (max-width: 425px) {
+    .guardaArticulos {
+        flex-direction: column;
+    }
+}

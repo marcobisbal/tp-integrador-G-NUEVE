@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/index_inicio2.css">
     <link rel="stylesheet" href="css/footer-header.css">
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -31,14 +32,14 @@
                     </ul>
 
                 </nav>
-                <p class="buscador">
+                <div class="conyheaderbuscador">
+                    <form action="./resultadosdebusqueda.html" method="get">
+                        <input type="text" name="buscador" id="buscador" placeholder="Buscar">
+                        <imput type="submit" value="Buscar">
+                            <i class="fas fa-search-minus"></i>
+                    </form>
+                </div>
 
-                    Búsqueda de Peliculas o Series: <input type="search" name="busquedapeliculasoseries"
-                        placeholder="pelicula, serie, director...">
-
-                    <input type="submit" value="Buscar">
-
-                </p>
             </div>
         </header>
         <main>

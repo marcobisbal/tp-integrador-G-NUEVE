@@ -6,17 +6,16 @@
 }
 
 body {
-     background-image: url(../img-favoritos/fondo-detail-series.jpg);
-     font-family: sans-serif;
-     text-decoration-style: none;
-     
+    background-image: url(../img-favoritos/fondo-detail-series.jpg);
+    font-family: sans-serif;
+    text-decoration-style: none;
+
 
 }
 
 
 .agrupar {
     background-color: rgb(184, 2, 2);
-    width: 1000px;
     border: 3px dotted yellow;
     margin: 20px auto;
 }
@@ -29,15 +28,16 @@ body {
     margin-top: 15px;
     text-align: left;
 }
-.logo{
+
+.logo {
     font: bold 16px helvetica;
     text-decoration: none;
-    color: black;  
+    color: black;
 }
 
 
-.main-container { 
-    max-width: 1000 px; 
+.main-container {
+    max-width: 1000 px;
     margin: 0 auto;
 
 
@@ -47,7 +47,7 @@ body {
 
 
 
-.titulo { 
+.titulo {
     display: block;
     color: rgb(252, 252, 252);
     font-size: 20px;
@@ -55,40 +55,37 @@ body {
     margin: 0 auto;
     font-family: sans-serif;
     font-style: italic
-    
-
 }
 
-.pelicula { 
-display: flex;
-flex-direction: column; 
-text-align: center;
-color: rgb(252, 252, 252);
-/*flex-wrap: wrap;*/
-
-}
-
-.peliculas-agregadas { 
+.pelicula {
     display: flex;
-    width: 100vw;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(252, 252, 252);
+    /*flex-wrap: wrap;*/
+
+}
+
+.peliculas-agregadas {
+    display: flex;
     flex-direction: column;
     /*justify-content: space-around;*/
-    margin: 0 auto; 
-    align-items: center; 
-   /* flex-wrap: wrap;*/
+    margin: 0 auto;
+    align-items: center;
+    /* flex-wrap: wrap;*/
     max-width: 1200px;
-   
 
-    
+
+
 }
 
-.portada { 
+.portada {
     background-color: black;
     border: dotted 5px rgb(248, 248, 69);
 }
 
 
-.ver { 
+.ver {
     display: inline-block;
     text-decoration: none;
     color: blanchedalmond;
@@ -96,13 +93,12 @@ color: rgb(252, 252, 252);
     font-size: 20px;
     padding: 20px;
     background-color: black
-
 }
 
-@media (max-width: 780px) { 
-    
-   
-    .titulo { 
+@media (max-width: 780px) {
+
+
+    .titulo {
         display: block;
         color: rgb(252, 252, 252);
         font-size: 30px;
@@ -110,23 +106,22 @@ color: rgb(252, 252, 252);
         text-align: center;
         font-family: sans-serif;
         font-style: italic
-   
     }
-   
-    .pelicula { 
+
+    .pelicula {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         text-align: center;
         font-size: 30px;
         color: rgb(252, 252, 252);
         /*flex-wrap: wrap;*/
-        
-        
+
+
     }
-    
-    
-    
-    .ver { 
+
+
+
+    .ver {
         display: inline-block;
         text-decoration: none;
         color: blanchedalmond;
@@ -144,10 +139,4 @@ color: rgb(252, 252, 252);
 
 
 
-@media (max-width: 780px) { 
-  
-
-
-
-
-}
+@media (max-width: 780px) {}

@@ -7,64 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/favoritos.css">
     <link rel="stylesheet" href="css/footer-header.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>★ Favoritos</title>
 </head>
 
 <body>
+    <header>
+        <div class="logo-nav">
+            <a href="index_inicio.html" class="logo">
+                <img src="img/logo.png" alt="rollo film">
+            </a>
+            <nav class="menu">
+                <ul>
+                    <div class="inicio">
+                        <li><a href="index_inicio.html">Inicio</a></li>
+                        <li><a href="generos.html">Generos</a></li>
+                        <li><a href="detalle-generos.html">Detalle Generos</a></li>
+                        <li><a href="detail-movie.html">Detalle Peliculas</a></li>
+                        <li><a href="detail-series.html">Detalle Series</a></li>
+                        <li><a href="favoritos.html">Favoritos</a></li>
+                        <li><a href="resultadosdebusqueda.html">Resultado de Busqueda></a></li>
+
+                    </div>
+                </ul>
+
+            </nav>
+            <div class="conyheaderbuscador">
+                <form action="./resultadosdebusqueda.html" method="get">
+                    <input type="text" name="buscador" id="buscador" placeholder="Buscar">
+                    <imput type="submit" value="Buscar">
+                        <i class="fas fa-search-minus"></i>
+                </form>
+            </div>
+        </div>
+
+    </header>
     <div class="main-container">
-        <div class="agrupar">
-            <header>
-                <div class="logo-nav">
-                    <a href="index_inicio.html" class="logo">
-                        <img src="img/logo.png" alt="rollo film">
-                    </a>
-                    <nav class="menu">
-                        <ul>
-                            <div class="inicio">
-                                <li><a href="index_inicio.html">Inicio</a></li>                                                 
-                                <li><a href="generos.html">Generos</a></li>
-                                <li><a href="detalle-generos.html">Detalle Generos</a></li>
-                                <li><a href="detail-movie.html">Detalle Peliculas</a></li>
-                                <li><a href="detail-series.html">Detalle Series</a></li>
-                                <li><a href="favoritos.html">Favoritos</a></li>
-                                <li><a href="resultadosdebusqueda.html">Resultado de Busqueda></a></li>
-                               
-                            </div>
-                        </ul>
-    
-                    </nav>
-                    <p class="buscador">
-    
-                        Búsqueda de Peliculas o Series: <input type="search" name="busquedapeliculasoseries"
-                            placeholder="pelicula, serie, director...">
-    
-                        <input type="submit" value="Buscar">
-    
-                    </p>
-                </div>
-        </header>
-    </div>
-    <section class="titulo">
-        <h1>★ Agregado a Favoritos (2) </h1>
-    </section>
-    <main>
-        <section class="peliculas-agregadas">
-            <article class="pelicula">
-                <span class="portada">
-                    <img src="img/favoritos/durodematarfav.jpg" alt="Duro de Matar">
-                </span>
-                <h2>Duro de Matar 4.0</h2>
-                <a href="detail-movie.html" class="ver"> Ver Ahora</a>
-            </article>
-            <article class="pelicula">
-                <span class="portada">
-                    <img src="img/detail-series/kcbZl4.jpg" alt="Luke Cage">
-                </span>
-                <h2>Luke Cage</h2>
-                <a href="detail-series.html" class="ver">Ver Ahora</a>
-            </article>
+
+        <section class="titulo">
+            <h1>★ Agregado a Favoritos (2) </h1>
         </section>
-    </main>
+        <main>
+            <section class="peliculas-agregadas">
+                <article class="pelicula">
+                    <span class="portada">
+                        <img src="img/favoritos/durodematarfav.jpg" alt="Duro de Matar">
+                    </span>
+                    <h2>Duro de Matar 4.0</h2>
+                    <a href="detail-movie.html" class="ver"> Ver Ahora</a>
+                </article>
+                <article class="pelicula">
+                    <span class="portada">
+                        <img src="img/detail-series/kcbZl4.jpg" alt="Luke Cage">
+                    </span>
+                    <h2>Luke Cage</h2>
+                    <a href="detail-series.html" class="ver">Ver Ahora</a>
+                </article>
+            </section>
+        </main>
     </div>
     <footer>
         <p class="seguinos">Seguinos en nuestras redes</p>
