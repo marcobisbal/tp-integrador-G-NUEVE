@@ -1,3 +1,6 @@
+
+/*reseteo*/
+
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +16,8 @@ body {
 
 }
 
+
+/*header*/
 
 .agrupar {
     background-color: rgb(184, 2, 2);
@@ -35,6 +40,7 @@ body {
     color: black;
 }
 
+/*main*/
 
 .main-container {
     max-width: 1000 px;
@@ -44,7 +50,7 @@ body {
 
 }
 
-
+/*titulo del html*/
 
 
 .titulo {
@@ -57,22 +63,22 @@ body {
     font-style: italic
 }
 
+/*section con las pelis/series*/
+
 .pelicula {
     display: flex;
     flex-direction: column;
     text-align: center;
     color: rgb(252, 252, 252);
-    /*flex-wrap: wrap;*/
+    
 
 }
 
 .peliculas-agregadas {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-around;*/
     margin: 0 auto;
     align-items: center;
-    /* flex-wrap: wrap;*/
     max-width: 1200px;
 
 
@@ -95,6 +101,11 @@ body {
     background-color: black
 }
 
+
+/*media query*/
+
+
+/*tablets*/
 @media (max-width: 780px) {
 
 
@@ -114,7 +125,7 @@ body {
         text-align: center;
         font-size: 30px;
         color: rgb(252, 252, 252);
-        /*flex-wrap: wrap;*/
+       
 
 
     }
@@ -139,4 +150,3 @@ body {
 
 
 
-@media (max-width: 780px) {}

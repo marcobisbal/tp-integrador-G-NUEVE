@@ -1,8 +1,13 @@
+
+/*reseteo*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/*main*/
 
 .main-container {
     max-width: 1200px;
@@ -10,6 +15,7 @@
 
 }
 
+/*titulo del html*/
 
 .titulo {
     display: block;
@@ -20,6 +26,8 @@
     font-family: sans-serif;
     font-style: italic
 }
+
+/*section de la pelicula*/
 
 .pelicula-y-detalles {
     display: flex;
@@ -43,6 +51,9 @@
     border: dotted 5px rgb(248, 248, 69);
     background-color: black;
 }
+
+
+/*media queries*/
 
 /*tablets */
 

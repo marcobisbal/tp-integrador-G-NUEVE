@@ -1,14 +1,21 @@
+/*reseteo*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
+/*main*/
+
 .main-container {
     max-width: 1200px;
     margin: 0 auto;
 
 }
+
+/*titulo del html*/
 
 
 .titulo {
@@ -20,6 +27,8 @@
     font-family: sans-serif;
     font-style: italic
 }
+
+/*section de la serie*/
 
 .pelicula-y-detalles {
     display: flex;
@@ -44,6 +53,8 @@
     background-color: black;
 }
 
+
+/*media queries*/
 
 /*tablets */
 
