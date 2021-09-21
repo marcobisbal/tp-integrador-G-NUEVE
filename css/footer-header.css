@@ -1,0 +1,66 @@
+
+/* CSS GENERAL PARA TODOS */
+body {
+    background-image: url("../img/fondocomunatodos.jpg");
+    text-align: center;
+    margin: 3px;
+    padding: 0%;
+}
+/* CSS HEADER */
+header {
+    display: inline-block;
+    border: dotted yellow 3px;
+}
+
+.agrupar {  
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu ul li {
+    padding: 5px 20px;
+    font: bold 16px helvetica;
+    display: inline-block;
+    margin-top: 15px;
+    text-align: left;
+}
+.logo{
+    font: bold 16px helvetica;
+    text-decoration: none;
+    color: black;  
+}
+.buscador {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+/* CSS FOOTER */
+footer {
+    border: 3px dotted yellow;
+    margin-top: 15px;
+}
+.seguinos {
+    font-size: 30px;
+}
+.buscador {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.imga1 {
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+}
+.link {
+    font-size: 20px;
+}

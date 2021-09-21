@@ -1,122 +1,131 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Página WEB | Buscador de peliculas o series</title>
-        <meta charset="utf-8">
-        <meta name="keywords" content="Peliculas,series,actores,directores">
-        <meta name="description" content="Buscar peliculas o series. El mejor lugar">
-        <meta name="author" content="Jose">
-        <meta name="copyright" content="Buscador de peliculas o series">
-        <meta name="robots" content="noindex">
-        <link rel="stylesheet" type="text/css" href="css_inicio/index_inicio2.css">
-    </head>
-    <body background="./img_inicio/fondo.jpeg">
-        <div class="agrupar">
-            <header>
-                <div class="logo-nav">
-                <a href="index_inicio.html" class="logo">Peliculas y Series </a>
+
+<head>
+    <title>Página WEB | Buscador de peliculas o series</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index_inicio2.css">
+    <link rel="stylesheet" href="css/footer-header.css">
+
+</head>
+
+<body>
+    <div class="agrupar">
+        <header>
+            <div class="logo-nav">
+                <a href="index_inicio.html" class="logo">
+                    <img src="img/logo.png" alt="rollo film">
+                </a>
                 <nav class="menu">
                     <ul>
-                        <li><a href="index_inicio.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="acerca.html">Acerca</a></li>
-                        <li><a href="formulario.html">Contacto</a></li>
+                        <div class="inicio">
+                            <li><a href="index_inicio.html">Inicio</a></li>
+                            <li><a href="generos.html">Generos</a></li>
+                            <li><a href="detalle-generos.html">Detalle Generos</a></li>
+                            <li><a href="detail-movie.html">Detalle Peliculas</a></li>
+                            <li><a href="detail-series.html">Detalle Series</a></li>
+                            <li><a href="favoritos.html">Favoritos</a></li>
+                            <li><a href="resultadosdebusqueda.html">Resultado de Busqueda></a></li>
+
+                        </div>
                     </ul>
+
                 </nav>
                 <p class="buscador">
 
-                    Búsqueda de Peliculas o Series: <input type="search" name="busquedapeliculasoseries" placeholder="pelicula, serie, director...">
-                
-                    <input type="submit" value="Buscar">
-                
-                </p>
-        </div>
-        </div>
-            </header>
-            <main>
-                <h1>Series y Peliculas</h1>
-                <section>
-                    <h2>Películas</h2>
-                    <div class="guardaArticulos">
-                        <article> 
-                            <img class="imga1" src="./img_inicio/pelicula2.jpg" alt=""> 
-                            <h3>Finde</h3>
-                        </article>
-                        <article>
-                            <img class="imga1" src="./img_inicio/img2.jpg" alt=""> 
-                            <h3>The Prodigy</h3>
-                        </article>
-                        <article>
-                            <img class="imga1" src="./img_inicio/img3.png" alt=""> 
-                            <h3>Iron Man</h3>
-                        </article>
-                        <article>
-                            <img class="imga1" src="./img_inicio/pelicula3.jpg" alt=""> 
-                            <h3>Zone 414</h3>
-                        </article>
-                        <article>
-                            <img class="imga1" src="./img_inicio/img1.jpg" alt=""> 
-                            <h3>Captain America Civil War</h3>
-                        </article>
-                    </div>
-                </section>
-                <section>
-                    <h2>Series</h2>
-                    <div class="guardaArticulos">
-                        <article>
-                            <img class="imga1" src="./img_inicio/serie1.jpg" alt="">  
-                            <h3>Kate</h3>
-                        </article>
-                        <article> 
-                            <img class="imga1" src="./img_inicio/serie2.jpg" alt=""> 
-                            <h3>Maligno</h3>
-                        </article>
-                        <article> 
-                            <img class="imga1" src="./img_inicio/series3.jpg" alt=""> 
-                            <h3>Loki</h3>
-                        </article>
-                        <article> 
-                            <img class="imga1" src="./img_inicio/serie6.jpg" alt=""> 
-                            <h3>Game Of Thrones</h3>
-                        </article>
-                        <article> 
-                            <img class="imga1" src="./img_inicio/series5.jpg" alt=""> 
-                            <h3>The Umbrella academy</h3>
-                        </article>
-                    </div>
-                </section>
-                <section>
-                    <h2>Tendencias</h2>
-                    <div class="guardaArticulos">
-                        <article> 
-                            <img class="imga1" src="./img_inicio/serie6.jpg" alt=""> 
-                            <h3>Game Of Thrones</h3>
-                        </article>
-                        <article> 
-                            <img class="imga1" src="./img_inicio/pelicula3.jpg" alt=""> 
-                            <h3>Zone 414</h3>
-                        </article>
-                        <article> 
-                            <img class="imga1" src="./img_inicio/pelicula11.jpg" alt=""> 
-                            <a class="link" href="detail-series.html">Luke Cage</a>
-                        </article>
-                        <article> 
-                            <img class="imga1" src="./img_inicio/pelicula4.jpg" alt=""> 
-                            <h3>Prey</h3>
-                        </article>
-                        <article> 
-                            <img class="imga1" src="./img_inicio/serie10.jpg" alt=""> 
-                            <a class="link" href="detail-movie.html">Duro de Matar 4.0</a>
-                        </article>
-                    </div>
-                </section>
+                    Búsqueda de Peliculas o Series: <input type="search" name="busquedapeliculasoseries"
+                        placeholder="pelicula, serie, director...">
 
-            </main>
-            <footer>
+                    <input type="submit" value="Buscar">
+
+                </p>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Películas</h2>
+                <div class="guardaArticulos">
+                    <article>
+                        <img class="imga1" src="img/inicio/finde.jpg" alt="Finde">
+                        <h3>Finde</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio/prodigy.jpg" alt="The Prodigy">
+                        <h3>The Prodigy</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio/ironman.png" alt="Iron Man">
+                        <h3>Iron Man</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio//zone414.jpg" alt="zone 414">
+                        <h3>Zone 414</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio//civilwar.jpg" alt="Captain America Civil War">
+                        <h3>Civil War</h3>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <h2>Series</h2>
+                <div class="guardaArticulos">
+                    <article>
+                        <img class="imga1" src="img/inicio/kate.jpg" alt="Kate">
+                        <h3>Kate</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio/maligno.jpg" alt="Maligno">
+                        <h3>Maligno</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio/loki.jpg" alt="Loki">
+                        <h3>Loki</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio/gameofthrones.jpg" alt="Game of Thrones">
+                        <h3>Game Of Thrones</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio/theumbrellaacademy.jpg" alt="The Umbrella academy">
+                        <h3>The Umbrella academy</h3>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <h2>Tendencias</h2>
+                <div class="guardaArticulos">
+                    <article>
+                        <img class="imga1" src="img/inicio/gameofthrones.jpg" alt="Game Of Thrones">
+                        <h3>Game Of Thrones</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio/zone414.jpg" alt="zone 414">
+                        <h3>Zone 414</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio/lukecage.jpg" alt="Luke Cage">
+                        <a class="link" href="detail-series.html">Luke Cage</a>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio/prey.jpg" alt="Prey">
+                        <h3>Prey</h3>
+                    </article>
+                    <article>
+                        <img class="imga1" src="img/inicio/durodematar.jpg" alt="Duro de Matar">
+                        <a class="link" href="detail-movie.html">Duro de Matar 4.0</a>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+        <footer>
             <p class="seguinos">Seguinos en nuestras redes</p>
             <p>facebook</p>
             <p>instagram</p>
             <p>twitter</p>
-            </footer>
-    </body>
+            <p>Marco Bisbal| Franco Santicchia | Juan Bautista Louge</p>
+        </footer>
+</body>
+
 </html>

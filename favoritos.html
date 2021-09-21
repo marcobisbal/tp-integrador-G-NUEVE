@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../tp-integrador-G-NUEVE/css-favoritos/styles.css">
+    <link rel="stylesheet" href="css/favoritos.css">
+    <link rel="stylesheet" href="css/footer-header.css">
     <title>★ Favoritos</title>
 </head>
+
 <body>
     <div class="main-container">
         <div class="agrupar">
             <header>
                 <div class="logo-nav">
-                    <a href="#" class="logo">peliculas</a>
+                    <a href="index_inicio.html" class="logo">
+                        <img src="img/logo.png" alt="rollo film">
+                    </a>
                     <nav class="menu">
                         <ul>
-                            <li> <a href="#"></a>Inicio</li>
-                            <li> <a href="#"></a>Nosotros</li>
-                            <li> <a href="#"></a>Acerca</li>
-                            <li> <a href="#"></a>Contacto</li>
+                            <div class="inicio">
+                                <li><a href="index_inicio.html">Inicio</a></li>                                                 
+                                <li><a href="generos.html">Generos</a></li>
+                                <li><a href="detalle-generos.html">Detalle Generos</a></li>
+                                <li><a href="detail-movie.html">Detalle Peliculas</a></li>
+                                <li><a href="detail-series.html">Detalle Series</a></li>
+                                <li><a href="favoritos.html">Favoritos</a></li>
+                                <li><a href="resultadosdebusqueda.html">Resultado de Busqueda></a></li>
+                               
+                            </div>
                         </ul>
+    
                     </nav>
+                    <p class="buscador">
+    
+                        Búsqueda de Peliculas o Series: <input type="search" name="busquedapeliculasoseries"
+                            placeholder="pelicula, serie, director...">
+    
+                        <input type="submit" value="Buscar">
+    
+                    </p>
                 </div>
-            </header>
-        </div>
+        </header>
+    </div>
     <section class="titulo">
         <h1>★ Agregado a Favoritos (2) </h1>
     </section>
- <main>
-     <section  class="peliculas-agregadas">
-         <article class="pelicula">
-            <span class="portada">
-                <img src="../tp-integrador-G-NUEVE/img-favoritos/die-hard-4-duro-de-matar.jpg" alt="Duro de Matar">
-            </span>
-           <h2>Duro de Matar 4.0</h2>
-           <a href="#" class="ver"> Ver Ahora</a>
-         </article>
-         <article class="pelicula">
-            <span class="portada">
-                <img src="../tp-integrador-G-NUEVE/img-favoritos/peaky2.jpg" alt="Peaky Blinders">
-            </span>
-           <h2>Peaky Blinders</h2>
-           <a href="#" class="ver">Ver Ahora</a>
-         </article>
-
-         
-
-
-
-
-     </section>
- </main>
-</div>
-<footer>
-    <p class="seguinos">Seguinos en nuestras redes</p>
-    <p>facebook</p>
-    <p>instagram</p>
-    <p>twitter</p>
-    </footer>   
+    <main>
+        <section class="peliculas-agregadas">
+            <article class="pelicula">
+                <span class="portada">
+                    <img src="img/favoritos/durodematarfav.jpg" alt="Duro de Matar">
+                </span>
+                <h2>Duro de Matar 4.0</h2>
+                <a href="detail-movie.html" class="ver"> Ver Ahora</a>
+            </article>
+            <article class="pelicula">
+                <span class="portada">
+                    <img src="img/detail-series/kcbZl4.jpg" alt="Luke Cage">
+                </span>
+                <h2>Luke Cage</h2>
+                <a href="detail-series.html" class="ver">Ver Ahora</a>
+            </article>
+        </section>
+    </main>
+    </div>
+    <footer>
+        <p class="seguinos">Seguinos en nuestras redes</p>
+        <p>facebook</p>
+        <p>instagram</p>
+        <p>twitter</p>
+        <p>Marco Bisbal| Franco Santicchia | Juan Bautista Louge</p>
+    </footer>
 </body>
+
 </html>

@@ -1,47 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Página WEB | Buscador de peliculas o series</title>
-        <meta charset="utf-8">
-        <meta name="keywords" content="Peliculas,series,actores,directores">
-        <meta name="description" content="Buscar peliculas o series. El mejor lugar">
-        <meta name="author" content="Jose">
-        <meta name="copyright" content="Buscador de peliculas o series">
-        <meta name="robots" content="noindex">
-        <link rel="stylesheet" type="text/css" href="css/index2.css">
-        <link rel="stylesheet" href="generos.html">
-        <link rel="stylesheet" href="./css/generos.css">
-        <link rel="stylessheet" href="detalle-generos.html">
+
+<head>
+    <title>Generos | Buscador de peliculas o series</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/generos.css">
+    <link rel="stylesheet" href="css/footer-header.css">
+
 </head>
 
 <body>
-    <h1>Generos</h1>
+    <header>
+        <div class="logo-nav">
+            <a href="index_inicio.html" class="logo">
+                <img src="img/logo.png" alt="rollo film">
+            </a>
+            <nav class="menu">
+                <ul>
+                    <div class="inicio">
+                        <li><a href="index_inicio.html">Inicio</a></li>
+                        <li><a href="generos.html">Generos</a></li>
+                        <li><a href="detalle-generos.html">Detalle Generos</a></li>
+                        <li><a href="detail-movie.html">Detalle Peliculas</a></li>
+                        <li><a href="detail-series.html">Detalle Series</a></li>
+                        <li><a href="favoritos.html">Favoritos</a></li>
+                        <li><a href="resultadosdebusqueda.html">Resultado de Busqueda></a></li>
+
+                    </div>
+                </ul>
+
+            </nav>
+            <p class="buscador">
+
+                Búsqueda de Peliculas o Series: <input type="search" name="busquedapeliculasoseries"
+                    placeholder="pelicula, serie, director...">
+
+                <input type="submit" value="Buscar">
+
+            </p>
+        </div>
+
+    </header>
     <main>
-        <section class="generospeliculas">
-            <ul class="generospeliculas(list)">
+        <div class="list-container">
+            <section class="generospeliculaslist">
                 <h2>Peliculas</h2>
-                <a href="./detalle-generos.html"><li class="listpoint">Acción</li></a>
-                <a href="./detalle-generos.html"><li class="listpoint">Comedias</li></a>
-                <a href="./detalle-generos.html"><li class="listpoint">horror</li></a>
-                <a href="./detalle-generos.html"><li class="listpoint">Cartoon</li></a>
-                <a href="./detalle-generos.html"><li class="listpoint">Romanticas</li></a>
-                <a href="./detalle-generos.html"><li class="listpoint">Documentales</li></a>
-            </ul>
+                <ul>
+                    <div class="generospeliculas">
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">Acción</li>
+                        </a>
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">Comedias</li>
+                        </a>
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">horror</li>
+                        </a>
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">Cartoon</li>
+                        </a>
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">Romanticas</li>
+                        </a>
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">Documentales</li>
+                        </a>
+                </ul>
+        </div>
+
         </section>
-        
-        <section class="generosseries">
-            <ul class="generosseries(list)">
+
+        <div class="list-container">
+            <section class="generosserieslist">
                 <h2>Series</h2>
-                <a href="./detalle-generos.html"><li class="listpoint">Acción</li></a>
-                <a href="./detalle-generos.html"><li class="listpoint">Comedias</li></a>
-                <a href="./detalle-generos.html"><li class="listpoint">Horror</li></a>
-                <a href="./detalle-generos.html"><li class="listpoint">Cartoon</li></a>
-                <a href="./detalle-generos.html"><li class="listpoint">Romanticas</li></a>
-                <a href="./detalle-generos.html"><li class="listpoint">Documentales</li></a>
-                
-            </ul>
+                <ul>
+                    <div class="generosseries">
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">Acción</li>
+                        </a>
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">Comedias</li>
+                        </a>
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">horror</li>
+                        </a>
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">Cartoon</li>
+                        </a>
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">Romanticas</li>
+                        </a>
+                        <a href="./detalle-generos.html">
+                            <li class="listpoint">Documentales</li>
+                        </a>
+                </ul>
+        </div>
+
+        </ul>
         </section>
     </main>
-    
+    <footer>
+        <p class="seguinos">Seguinos en nuestras redes</p>
+        <p>facebook</p>
+        <p>instagram</p>
+        <p>twitter</p>
+        <p>Marco Bisbal | Franco Santicchia | Juan Bautista Louge</p>
+    </footer>
+
 </body>
+
 </html>
