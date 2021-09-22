@@ -9,7 +9,7 @@ body {
 /* CSS HEADER */
 header {
     display: inline-block;
-    border: dotted yellow 3px;
+    border: dotted yellow 4px;
 }
 
 .agrupar {
@@ -47,7 +47,7 @@ header {
 
 /* CSS FOOTER */
 footer {
-    border: 3px dotted yellow;
+    border: 4px dotted yellow;
     margin-top: 15px;
 }
 
