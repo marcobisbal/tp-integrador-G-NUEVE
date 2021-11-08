@@ -104,7 +104,7 @@ footer {
     display: block;
     color: rgb(252, 252, 252);
     text-align: center;
-    font-size: 20px;
+    font-size: 50px;
     padding: 100px;
     font-family: sans-serif;
     font-style: italic
@@ -191,7 +191,7 @@ main {
     display: block;
     color: rgb(252, 252, 252);
     text-align: center;
-    font-size: 20px;
+    font-size: 50px;
     padding: 100px;
     font-family: sans-serif;
     font-style: italic
@@ -240,7 +240,7 @@ main {
 .titulo-peli-fav {
     display: block;
     color: rgb(252, 252, 252);
-    font-size: 20px;
+    font-size: 50px;
     padding: 50px;
     margin: 0 auto;
     font-family: sans-serif;
@@ -287,6 +287,7 @@ main {
 
 /*------------------generos--------------------*/
 
+
 .list-container-generos {
     display: flex;
     flex-direction: row;
@@ -294,7 +295,26 @@ main {
     justify-content: center;
 }
 
+.list-container-generos-serie {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+}
+
+
 .list-container-generos li {
+    background-color: rgb(255, 208, 0);
+    height: 40px;
+    width: 50vw;
+    display: block;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
+.list-container-generos-serie li {
     background-color: rgb(255, 208, 0);
     height: 40px;
     width: 50vw;
@@ -319,6 +339,7 @@ main {
 
 .h2-index {
     text-align: left;
+    color: white;
 
 }
 
@@ -329,13 +350,37 @@ main {
     flex-direction: column;
 }
 
-.guardaArticulos-index {
+
+/*.prueba {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+
+
+
+}*/
+
+.guardaArticulosIndexPeli {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+.guardaArticulosIndexTendencias {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+   
 }
 
 .imga1 {
@@ -344,6 +389,15 @@ main {
     margin-top: 40px;
 }
 
+h3 {
+    color: white;
+    font-style: italic;
+
+
+}
+p{
+    color: white;
+}
 /*------------------resultados de busqueda--------------------*/
 
 .articulo-resultados {
