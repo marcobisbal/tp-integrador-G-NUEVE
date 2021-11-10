@@ -304,6 +304,7 @@ main {
 
 
 .list-container-generos li {
+    color: black;
     background-color: rgb(255, 208, 0);
     height: 40px;
     width: 50vw;
@@ -315,6 +316,7 @@ main {
 }
 
 .list-container-generos-serie li {
+    color: black;
     background-color: rgb(255, 208, 0);
     height: 40px;
     width: 50vw;
@@ -326,6 +328,20 @@ main {
 }
 
 /*------------------inicio--------------------*/
+
+.botonVerMas {
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    background-color: rgb(255, 196, 0);
+    font-weight: bold;
+    border-radius: 20px;
+
+    
+
+
+
+}
+
 
 .articulo-index {
     width: 180px;
@@ -373,7 +389,17 @@ main {
    
 }
 
-.guardaArticulosIndexTendencias {
+.guardaArticulosIndexSeries {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+.guardaArticulosIndexMejorPuntuadas {
     display: flex;
     flex-wrap: wrap;
     width: 100%;

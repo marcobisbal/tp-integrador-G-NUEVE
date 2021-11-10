@@ -16,9 +16,11 @@ fetch (urlPeli)
 
 
         for (let i=0; i<5; i++) {
-            pelisPopular += `<article> <img src=img/inicio/durodematar.jpg alt='${info[i].title}' />
+            pelisPopular += `<article> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
             <h3>${info[i].title} </h3>
-            <p>${info[i].release_date}</p>`
+            <p>${info[i].release_date}</p> 
+            <a href="detail-movie.html" class="botonVerMas"> Ver Mas</a>
+            </article>`
             
             
         }
@@ -66,9 +68,11 @@ fetch (urlSerie)
 
 
         for (let i=0; i<5; i++) {
-            seriesPopular += `<article> <img src= img/inicio/durodematar.jpg alt='${info[i].title}' />
-            <h3>${info[i].title} </h3>
-            <p>${info[i].release_date}</p>`
+            seriesPopular += `<article> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].name}' />
+            <h3>${info[i].name} </h3>
+            <p>${info[i].first_air_date}</p> 
+            <a href="detail-series.html" class="botonVerMas"> Ver Mas</a>
+            </article>`
             
             
         }
@@ -86,3 +90,46 @@ fetch (urlSerie)
         console.log("Error:"+ error);
     })
 
+
+//------------------------------peliculas mejor valoradas----------------------------------------------//
+
+
+let urlPeliTop = "https://api.themoviedb.org/3/movie/top_rated?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=en-US&page=1"
+
+
+fetch (urlPeliTop)
+    .then(function(response){
+        return response.json();
+
+    })
+
+    .then(function(data){
+        console.log(data.results);
+        let guardaArticulosIndexPeliTop = document.querySelector('.guardaArticulosIndexMejorPuntuadas');
+        let info = data.results;
+        let PelisTop = '';
+
+
+
+        for (let i=0; i<5; i++) {
+            PelisTop += `<article> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
+            <h3>${info[i].title} </h3>
+            <p>${info[i].release_date}</p> 
+            <a href="detail-movie.html" class="botonVerMas"> Ver Mas</a>
+            </article>`
+            
+            
+        }
+
+
+        guardaArticulosIndexPeliTop.innerHTML = PelisTop;
+
+        //let article = document.querySelector(".article");
+        //article.style.border = "3px";
+    
+    
+    
+    })
+    .catch(function(error){
+        console.log("Error:"+ error);
+    })
