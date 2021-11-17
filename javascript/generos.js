@@ -19,7 +19,7 @@ fetch (urlGenerosPelis)
         for (let i=0; i<info.length; i++) {
             generosPeli += `<article class = "generosseries" />
             <li>
-            <a href="detalle-generos.html?id=${info[i].id}">${info[i].name} </a>
+            <a href="detalle-generos.html?id=${info[i].id}&genre_ids=${info[i].name}"> ${info[i].name} </a>
             </li>`
             
             

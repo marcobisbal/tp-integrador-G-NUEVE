@@ -133,3 +133,29 @@ fetch (urlPeliTop)
     .catch(function(error){
         console.log("Error:"+ error);
     })
+
+
+// formulario busqueda
+
+
+
+/*let formulario = document.querySelector ('form')
+let inputField = document.querySelector ('buscar')
+let message = document.querySelector ('message')
+
+formulario.addEventListener ('submit', function (evento) {
+    evento.preventDefault()
+    console.log('no me mando'); })
+
+    /*if (inputField.value == "") {
+        message.innerText = 'Campo obligatorio'
+        
+    } else if (inputField.value.length < 3 ) {
+        message.innerText = "Debe escribir al menos 3 caracteres."
+
+    } else {
+        this.submit()
+    }*/
+
+
+//}) */

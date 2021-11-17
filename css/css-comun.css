@@ -135,16 +135,35 @@ footer {
 }
 
 /*------------------detalles de genero--------------------*/
+.tituloGenero   {
+    padding: 20px;
+    font-size: 30px;
+
+
+}
 
 .articulo-peli-genero {
-    width: 180px;
-    height: 300px;
+    width: 154px;
+    height: 350px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+   /* flex-direction: row;*/
     justify-content: center;
     padding: 10px;
-   /* flex-wrap: wrap;*/
+    flex-wrap: wrap;
+    
+}
+
+.articulo-serie-genero {
+    width: 154px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+   /* flex-direction: row;*/
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    
 }
 
 /*h2 {
@@ -164,9 +183,21 @@ main {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
     flex-wrap: wrap;
+    flex-direction: row;
 }
+
+.guardaArticulosSerie {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 
 .portada-peliculas {
     width: 100%;
@@ -344,18 +375,22 @@ main {
 
 
 .articulo-index {
-    width: 180px;
-    height: 300px;
+    width: 154px;
+    height: 350px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
+
 }
 
 .h2-index {
+   
     text-align: left;
     color: white;
+    /*background-color: black;
+    border: 3px dotted rgb(255, 208, 0);*/
 
 }
 
@@ -367,17 +402,6 @@ main {
 }
 
 
-/*.prueba {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-
-
-
-}*/
 
 .guardaArticulosIndexPeli {
     display: flex;
@@ -385,7 +409,8 @@ main {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
+   
    
 }
 
@@ -395,7 +420,7 @@ main {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
    
 }
 
@@ -405,7 +430,7 @@ main {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
    
 }
 

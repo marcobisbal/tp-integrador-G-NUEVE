@@ -1,28 +1,43 @@
-//https://api.themoviedb.org/3/discover/movie?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=string
-
 
 
 let qs = location.search;
 let qsto = new URLSearchParams(qs);
 let id = qsto.get('id');
 
-let url = "https://api.themoviedb.org/3/discover/movie?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${id}"
+let urlMovie = `https://api.themoviedb.org/3/discover/movie?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${id}`
 
-fetch (url) 
+fetch (urlMovie) 
     .then(function(response) {
         return response.json();
     })
     .then(function(data) {
-        console.log(data);
+        console.log(data.results);
+        let articuloGenero = document.querySelector('.guardaArticulos');
+        let info = data.results;
+        let generos = '';
+
     
 
-        let titulos = document.querySelector ('h3');
-        let img = document.querySelector ('img');
-        let boton = document.querySelector ('.link');
+        for (let i=0; i<info.length; i++) {
+            generos += 
+            `<article class ="articulo-peli-genero"> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
+            <h3>${info[i].title} </h3>
+            <p>${info[i].release_date}</p> 
+            <a href="detail-movie.html" class="botonVerMas"> Ver Mas</a>
+            </article>`
+            
+            
+        }
 
-        titulos.innertext = data.name;
-        img.src = data.poster_path;
-        //boton.innertext = 
+
+
+        articuloGenero.innerHTML = generos;
+
+
+        
+
+
+        
 
 
 
@@ -31,6 +46,51 @@ fetch (url)
         console.log(error);
     })
 
+//-----------------------------------generos de serie-----------------------------------------------------------------
+
+
+ let urlSerie = `https://api.themoviedb.org/3/discover/tv?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false&with_genres=${id}`
+
+fetch (urlSerie) 
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data.results);
+        let articuloGeneroSerie = document.querySelector('.guardaArticulosSerie');
+        let info = data.results;
+        let generosSerie = '';
+
+    
+    
+
+        for (let i=0; i<info.length; i++) {
+            generosSerie += 
+            `<article class ="articulo-serie-genero"> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
+            <h3>${info[i].name} </h3>
+            <p>${info[i].first_air_date}</p> 
+            <a href="detail-series.html" class="botonVerMas"> Ver Mas</a>
+            </article>`
+            
+            
+        }
+
+
+
+        articuloGeneroSerie.innerHTML = generosSerie;
+
+
+        
+
+
+        
+
+
+
+    })
+    .catch(function(error) {
+        console.log(error);
+    })
 
     
 
