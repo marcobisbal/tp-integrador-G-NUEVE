@@ -628,7 +628,7 @@ p{
 
     }
 
-    .guardaArticulos-index {
+    .guardaArticulosIndexSeries {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -636,6 +636,30 @@ p{
         justify-content: space-around;
         align-items: center;
         padding: 10px;
+    }
+
+    .guardaArticulosIndexPeli {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+       
+       
+    }
+
+    .guardaArticulosIndexMejorPuntuadas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+       
+       
     }
 
 

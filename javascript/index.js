@@ -16,7 +16,7 @@ fetch (urlPeli)
 
 
         for (let i=0; i<5; i++) {
-            pelisPopular += `<article> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
+            pelisPopular += `<article class= "articulo-index"> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
             <h3>${info[i].title} </h3>
             <p>${info[i].release_date}</p> 
             <a href="detail-movie.html" class="botonVerMas"> Ver Mas</a>
@@ -68,7 +68,7 @@ fetch (urlSerie)
 
 
         for (let i=0; i<5; i++) {
-            seriesPopular += `<article> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].name}' />
+            seriesPopular += `<article class= "articulo-index"> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].name}' />
             <h3>${info[i].name} </h3>
             <p>${info[i].first_air_date}</p> 
             <a href="detail-series.html" class="botonVerMas"> Ver Mas</a>
@@ -112,7 +112,7 @@ fetch (urlPeliTop)
 
 
         for (let i=0; i<5; i++) {
-            PelisTop += `<article> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
+            PelisTop += `<article class= "articulo-index"> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
             <h3>${info[i].title} </h3>
             <p>${info[i].release_date}</p> 
             <a href="detail-movie.html" class="botonVerMas"> Ver Mas</a>
