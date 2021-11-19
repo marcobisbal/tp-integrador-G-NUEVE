@@ -19,7 +19,7 @@ fetch (urlPeli)
             pelisPopular += `<article class= "articulo-index"> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
             <h3>${info[i].title} </h3>
             <p>${info[i].release_date}</p> 
-            <a href="detail-movie.html" class="botonVerMas"> Ver Mas</a>
+            <a href="detail-movie.html?id=${info[i].id}" class="botonVerMas"> Ver Mas</a>
             </article>`
             
             
