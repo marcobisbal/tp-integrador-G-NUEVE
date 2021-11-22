@@ -18,7 +18,6 @@ window.addEventListener("load", function () {
     const fecha = document.querySelector('.fechaPeli');
     
     
-
     fetch(URL)
         .then(function (data) {
             return data.json();
@@ -41,45 +40,45 @@ window.addEventListener("load", function () {
         })
 
 
-        // creo el array para rellenar los favoritos
+    // creo el array para rellenar los favoritos
     let favoritos = [];
-        //recupero el storage
+    //recupero el storage
     let recuperoStorage = localStorage.getItem('favoritos');
 
-        //reviso si el id esta en favoritos
-    if (recuperoStorage =! null) {
+    //reviso si el id esta en favoritos
+    if (recuperoStorage) {
 
         favoritos = JSON.parse(recuperoStorage);
         //console.log(favoritos);
     }
-    let fav = document.querySelector('.peliculas-agregadas')
+
     let botonFavoritos = document.querySelector('.botonFavPeli');
 
     if (favoritos.includes(id)) {
-        botonFavoritos.innerText = 'Quitar de favoritos'
+        botonFavoritos.innerText = '- Quitar de favoritos ★'
 
     }
 
 
 
-    fav.addEventListener('click', function (evento) {
+    botonFavoritos.addEventListener('click', function (evento) {
         evento.preventDefault();
 
 
         if (favoritos.includes(id)) {
             let indice = favoritos.indexOf(id);
             favoritos.splice(indice, 1)
-            botonFavoritos.innerText = 'Agregar a favoritos'
+            botonFavoritos.innerText = '+ Agregar a favoritos ★'
 
         } else {
             favoritos.push(id);
-            botonFavoritos.innerText = 'Quitar de favoritos'
+            botonFavoritos.innerText = '- Quitar de favoritos ★'
 
 
 
         }
 
-        console.log(favoritos);
+       
 
 
         let favToString = JSON.stringify(favoritos);
