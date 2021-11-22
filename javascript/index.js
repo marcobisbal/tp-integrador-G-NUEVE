@@ -135,27 +135,50 @@ fetch(urlPeliTop)
     })
 
 
-// formulario busqueda
 
 
 
-/*let formulario = document.querySelector ('form')
-let inputField = document.querySelector ('buscar')
-let message = document.querySelector ('message')
+    // formulario busqueda
 
-formulario.addEventListener ('submit', function (evento) {
+
+
+let formulario = document.querySelector('form');
+let inputField = document.querySelector('.search');
+let message = document.querySelector('.message');
+
+formulario.addEventListener('submit', function (evento) {
     evento.preventDefault()
-    console.log('no me mando'); })
+    console.log('no me mando');
 
-    /*if (inputField.value == "") {
-        message.innerText = 'Campo obligatorio'
-
-    } else if (inputField.value.length < 3 ) {
+    if (inputField.value == "") {
+        message.innerText = "Campo obligatorio.";
+        message.style.color = "red"
+        inputField.style.outline = "1px solid red"
+    
+    } else if (inputField.value.length < 3){
         message.innerText = "Debe escribir al menos 3 caracteres."
-
+        message.style.color = "red"
+        inputField.style.outline = "1px solid red"
+    
     } else {
         this.submit()
-    }*/
+    }
 
 
-//}) */
+
+
+
+
+})
+
+inputField.addEventListener('focus', function(){
+    message.innerText = '';
+
+
+
+
+})
+
+
+
+

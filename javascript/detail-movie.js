@@ -16,7 +16,8 @@ window.addEventListener("load", function () {
     const genero = document.querySelector('.generoPeli');
     const calificacion = document.querySelector('.calificacionPeli');
     const fecha = document.querySelector('.fechaPeli');
-
+    
+    
 
     fetch(URL)
         .then(function (data) {
@@ -28,6 +29,7 @@ window.addEventListener("load", function () {
             sinopsis.innerText = data.overview;
             duracion.innerText = `Duración: ${data.runtime} minutos`;
             calificacion.innerText = `Calificación: ${data.vote_average}`;
+            genero.href = `detalle-generos.html?id=${data.genres[0].id}&genre_ids=${data.genres[0].name}`;
             genero.innerText = `Género: ${data.genres[0].name}`;
             fecha.innerText = `Fecha de Estreno: ${data.release_date}`;
             console.log(data);
@@ -39,22 +41,22 @@ window.addEventListener("load", function () {
         })
 
 
-
+        // creo el array para rellenar los favoritos
     let favoritos = [];
-
+        //recupero el storage
     let recuperoStorage = localStorage.getItem('favoritos');
 
-
-    if (recuperoStorage = ! null) {
+        //reviso si el id esta en favoritos
+    if (recuperoStorage =! null) {
 
         favoritos = JSON.parse(recuperoStorage);
-        console.log(favoritos);
+        //console.log(favoritos);
     }
-
-    let fav = document.querySelector('.botonFavPeli');
+    let fav = document.querySelector('.peliculas-agregadas')
+    let botonFavoritos = document.querySelector('.botonFavPeli');
 
     if (favoritos.includes(id)) {
-        fav.innerText = 'Quitar de favoritos'
+        botonFavoritos.innerText = 'Quitar de favoritos'
 
     }
 
@@ -67,11 +69,11 @@ window.addEventListener("load", function () {
         if (favoritos.includes(id)) {
             let indice = favoritos.indexOf(id);
             favoritos.splice(indice, 1)
-            fav.innerText = 'Agregar a favoritos'
+            botonFavoritos.innerText = 'Agregar a favoritos'
 
         } else {
             favoritos.push(id);
-            fav.innerText = 'Quitar de favoritos'
+            botonFavoritos.innerText = 'Quitar de favoritos'
 
 
 
