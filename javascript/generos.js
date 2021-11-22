@@ -1,4 +1,4 @@
-let urlGenerosPelis = "https://api.themoviedb.org/3/genre/movie/list?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=en-US"
+let urlGenerosPelis = "https://api.themoviedb.org/3/genre/movie/list?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=es"
 
 
 
@@ -41,7 +41,7 @@ fetch (urlGenerosPelis)
 
 //----------------generos series-----------------------------------------
 
-let urlGenerosSeries = "https://api.themoviedb.org/3/genre/tv/list?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=en-US"
+let urlGenerosSeries = "https://api.themoviedb.org/3/genre/tv/list?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=es"
 
 
 

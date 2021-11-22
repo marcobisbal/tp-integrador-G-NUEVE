@@ -19,30 +19,26 @@
             </a>
             <nav class="menu">
                 <ul class="inicio">
-                
+
                     <li><a href="index_inicio.html">Inicio</a></li>
                     <li><a href="generos.html">Generos</a></li>
-                    <li><a href="detalle-generos.html">Detalle Generos</a></li>
-                    <li><a href="detail-movie.html">Detalle Peliculas</a></li>
-                    <li><a href="detail-series.html">Detalle Series</a></li>
                     <li><a href="favoritos.html">Favoritos</a></li>
-                    <li><a href="resultadosdebusqueda.html">Resultado de Busqueda></a></li>
-                    
+
                 </ul>
 
             </nav>
         </div>
         <div class="conyheaderbuscador">
             <form action="./resultadosdebusqueda.html" method="get">
-                <input type="text" name="buscador" id="buscador" placeholder="Buscar">
-                <imput type="submit" value="Buscar">
+                <input type="text" class="search" name="buscador" id="buscador" placeholder="Buscar">
+                <button type="submit" value="Buscar">
                     <i class="fas fa-search-minus"></i>
             </form>
         </div>
 
     </header>
     <main>
-        <h3>Géneros de Peliculas</h3>
+        <h3 class="h3genero">Géneros de Peliculas</h3>
         <div class="list-container-generos">
             <section class="generospeliculaslist">
                 <h2></h2>
@@ -70,30 +66,30 @@
         </div>
 
         </section>
-        <h3>Géneros de series</h3>
+        <h3 class="h3genero">Géneros de series</h3>
         <div class="list-container-generos-serie">
             <section class="generosserieslist">
-                
+
                 <ul>
                     <div class="generosseries">
-                        
-                            <li class="listpoint"></li>
-                        
-                        
-                            <li class="listpoint"></li>
-                        
-                        
-                            <li class="listpoint"></li>
-                        
-                            <li class="listpoint"></li>
 
-                        
-                            <li class="listpoint"></li>
-                            <li class="listpoint"></li>
-                        
+                        <li class="listpoint"></li>
+
+
+                        <li class="listpoint"></li>
+
+
+                        <li class="listpoint"></li>
+
+                        <li class="listpoint"></li>
+
+
+                        <li class="listpoint"></li>
+                        <li class="listpoint"></li>
+
                 </ul>
-            </section>       
-        </div>     
+            </section>
+        </div>
     </main>
     <footer>
         <p class="seguinos">Seguinos en nuestras redes</p>
@@ -101,8 +97,10 @@
         <p>instagram</p>
         <p>twitter</p>
         <p>Marco Bisbal | Franco Santicchia | Juan Bautista Louge</p>
+        <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="tmdblogo" class="tmdblogo">
     </footer>
 
 </body>
 <script src="./javascript/generos.js"></script>
+
 </html>

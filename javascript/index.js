@@ -1,13 +1,13 @@
-let urlPeli = "https://api.themoviedb.org/3/movie/popular?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=en-US&page=1"
+let urlPeli = "https://api.themoviedb.org/3/movie/popular?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=es&page=1"
 
 
-fetch (urlPeli)
-    .then(function(response){
+fetch(urlPeli)
+    .then(function (response) {
         return response.json();
 
     })
 
-    .then(function(data){
+    .then(function (data) {
         console.log(data.results);
         let guardaArticulosIndexPeli = document.querySelector('.guardaArticulosIndexPeli');
         let info = data.results;
@@ -15,14 +15,14 @@ fetch (urlPeli)
 
 
 
-        for (let i=0; i<5; i++) {
+        for (let i = 0; i < 5; i++) {
             pelisPopular += `<article class= "articulo-index"> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
             <h3>${info[i].title} </h3>
             <p>${info[i].release_date}</p> 
             <a href="detail-movie.html?id=${info[i].id}" class="botonVerMas"> Ver Mas</a>
             </article>`
-            
-            
+
+
         }
 
 
@@ -30,12 +30,12 @@ fetch (urlPeli)
 
         //let .guardaArticulosIndexPeli = document.querySelector(".guardaArticulosIndexPeli");
         //guardaArticulosIndexPeli.style.display = flex; 
-    
-    
-    
+
+
+
     })
-    .catch(function(error){
-        console.log("Error:"+ error);
+    .catch(function (error) {
+        console.log("Error:" + error);
     })
 
 
@@ -50,16 +50,16 @@ fetch (urlPeli)
 
 
 
-let urlSerie = "https://api.themoviedb.org/3/tv/popular?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=en-US&page=1"
+let urlSerie = "https://api.themoviedb.org/3/tv/popular?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=es&page=1"
 
 
-fetch (urlSerie)
-    .then(function(response){
+fetch(urlSerie)
+    .then(function (response) {
         return response.json();
 
     })
 
-    .then(function(data){
+    .then(function (data) {
         console.log(data.results);
         let guardaArticulosIndexSeries = document.querySelector('.guardaArticulosIndexSeries');
         let info = data.results;
@@ -67,14 +67,14 @@ fetch (urlSerie)
 
 
 
-        for (let i=0; i<5; i++) {
+        for (let i = 0; i < 5; i++) {
             seriesPopular += `<article class= "articulo-index"> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].name}' />
             <h3>${info[i].name} </h3>
             <p>${info[i].first_air_date}</p> 
-            <a href="detail-series.html" class="botonVerMas"> Ver Mas</a>
+            <a href="detail-series.html?id=${info[i].id}" class="botonVerMas"> Ver Mas</a>
             </article>`
-            
-            
+
+
         }
 
 
@@ -82,28 +82,28 @@ fetch (urlSerie)
 
         //let article = document.querySelector(".article");
         //article.style.border = "3px";
-    
-    
-    
+
+
+
     })
-    .catch(function(error){
-        console.log("Error:"+ error);
+    .catch(function (error) {
+        console.log("Error:" + error);
     })
 
 
 //------------------------------peliculas mejor valoradas----------------------------------------------//
 
 
-let urlPeliTop = "https://api.themoviedb.org/3/movie/top_rated?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=en-US&page=1"
+let urlPeliTop = "https://api.themoviedb.org/3/movie/top_rated?api_key=c6aeb9dcbc4f74ad8200cc2d59baad51&language=es&page=1"
 
 
-fetch (urlPeliTop)
-    .then(function(response){
+fetch(urlPeliTop)
+    .then(function (response) {
         return response.json();
 
     })
 
-    .then(function(data){
+    .then(function (data) {
         console.log(data.results);
         let guardaArticulosIndexPeliTop = document.querySelector('.guardaArticulosIndexMejorPuntuadas');
         let info = data.results;
@@ -111,14 +111,14 @@ fetch (urlPeliTop)
 
 
 
-        for (let i=0; i<5; i++) {
+        for (let i = 0; i < 5; i++) {
             PelisTop += `<article class= "articulo-index"> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
             <h3>${info[i].title} </h3>
             <p>${info[i].release_date}</p> 
-            <a href="detail-movie.html" class="botonVerMas"> Ver Mas</a>
+            <a href="detail-movie.html?id=${info[i].id}" class="botonVerMas"> Ver Mas</a>
             </article>`
-            
-            
+
+
         }
 
 
@@ -126,12 +126,12 @@ fetch (urlPeliTop)
 
         //let article = document.querySelector(".article");
         //article.style.border = "3px";
-    
-    
-    
+
+
+
     })
-    .catch(function(error){
-        console.log("Error:"+ error);
+    .catch(function (error) {
+        console.log("Error:" + error);
     })
 
 
@@ -149,7 +149,7 @@ formulario.addEventListener ('submit', function (evento) {
 
     /*if (inputField.value == "") {
         message.innerText = 'Campo obligatorio'
-        
+
     } else if (inputField.value.length < 3 ) {
         message.innerText = "Debe escribir al menos 3 caracteres."
 

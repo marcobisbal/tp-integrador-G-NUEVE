@@ -15,36 +15,32 @@
 </head>
 
 <body>
-        <header>
-            <div class="logo-nav">
-                <a href="index_inicio.html" class="logo">
-                    <img src="img/logo.png" alt="rollo film">
-                </a>
-                <nav class="menu">
-                    <ul class="inicio">
-                        
-                        <li><a href="index_inicio.html">Inicio</a></li>
-                        <li><a href="generos.html">Generos</a></li>
-                        <li><a href="detalle-generos.html">Detalle Generos</a></li>
-                        <li><a href="detail-movie.html">Detalle Peliculas</a></li>
-                        <li><a href="detail-series.html">Detalle Series</a></li>
-                        <li><a href="favoritos.html">Favoritos</a></li>
-                        <li><a href="resultadosdebusqueda.html">Resultado de Busqueda></a></li>
+    <header>
+        <div class="logo-nav">
+            <a href="index_inicio.html" class="logo">
+                <img src="img/logo.png" alt="rollo film">
+            </a>
+            <nav class="menu">
+                <ul class="inicio">
 
-                        
-                    </ul>
+                    <li><a href="index_inicio.html">Inicio</a></li>
+                    <li><a href="generos.html">Generos</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
 
-                </nav>
-                <div class="conyheaderbuscador">
-                    <form action="./resultadosdebusqueda.html" method="get">
-                        <input type="text" name="buscador" id="buscador" placeholder="Buscar">
-                        <imput type="submit" value="Buscar">
-                            <i class="fas fa-search-minus"></i>
-                    </form>
-                </div>
+
+                </ul>
+
+            </nav>
+            <div class="conyheaderbuscador">
+                <form action="./resultadosdebusqueda.html" method="get">
+                    <input type="text" class="search" name="buscador" id="buscador" placeholder="Buscar">
+                    <button type="submit" value="Buscar">
+                        <i class="fas fa-search-minus"></i>
+                </form>
             </div>
-    
-        </header>
+        </div>
+
+    </header>
     <div class="main-container-detalle-peli">
         <h1 class="tituloPelicula"></h1>
         <main>
@@ -56,13 +52,13 @@
                     <ul class="texto">
                         <li class="sinopsisPeli"></li>
                         <li class="duracionPeli"></li>
-                        <li class=""></li>
+                        <li class="fechaPeli"></li>
                         <li class="calificacionPeli"> </li>
-                        <li class="objeto-de-lista-peli">
+                        <li class=""> 
                             <a class="generoPeli" href="detalle-generos.html"></a>
                         </li>
-                        <li class="objeto-de-lista-peli">
-                            <a href="favoritos.html">+Agregar a favoritos ★</a>
+                        <li >
+                            <a class="botonFavPeli">+ Agregar a favoritos ★</a>
                         </li>
                     </ul>
                 </article>
@@ -75,7 +71,9 @@
         <p>instagram</p>
         <p>twitter</p>
         <p>Marco Bisbal| Franco Santicchia | Juan Bautista Louge</p>
+        <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="tmdblogo" class="tmdblogo">
     </footer>
 </body>
 <script src="./javascript/detail-movie.js"></script>
+
 </html>

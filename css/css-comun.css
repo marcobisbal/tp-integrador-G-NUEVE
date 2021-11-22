@@ -93,6 +93,8 @@ footer {
 
 
 
+
+
 /*------------------detalles de pelicula--------------------*/
 
 /*main*/
@@ -122,6 +124,8 @@ footer {
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
+    justify-content: center;
+    padding-bottom: 100px;
     
 }
 
@@ -144,6 +148,17 @@ footer {
     width: 360px;
 }
 
+.fechaPeli {
+    
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: dotted 4px rgb(248, 248, 69);
+    color: white;
+    list-style-type: none;
+    font-family: sans-serif;
+    width: 360px;
+}
+
 .duracionPeli {
     background-color: rgb(0, 0, 0);
     font-size: 20px;
@@ -155,11 +170,14 @@ footer {
 }
 
 .generoPeli {
+    text-decoration: none;
+    display: inline-block;
+    list-style-type: none;
     background-color: rgb(0, 0, 0);
     font-size: 20px;
     border: dotted 4px rgb(248, 248, 69);
     color: white;
-    list-style-type: none;
+    
     font-family: sans-serif;
     width: 360px;
 }
@@ -174,6 +192,22 @@ footer {
     width: 360px;
 }
 
+.botonFavPeli {
+    text-decoration: none;
+    background-color: rgb(255, 196, 0);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+    list-style-type: none;
+    font-family: sans-serif;
+    width: 360px;
+}
+
+.texto {
+    list-style-type: none;
+}
 
 .foto-peli-detalle {
     border: dotted 5px rgb(248, 248, 69);
@@ -181,7 +215,14 @@ footer {
 }
 
 /*------------------detalles de genero--------------------*/
-.tituloGenero   {
+.tituloGeneroPeli   {
+    padding: 20px;
+    font-size: 30px;
+
+
+}
+
+.tituloGeneroSerie   {
     padding: 20px;
     font-size: 30px;
 
@@ -364,6 +405,13 @@ main {
 
 /*------------------generos--------------------*/
 
+.h3genero{
+    padding: 20px;
+    font-size: 30px;
+}
+
+
+
 .listpoint {
     text-decoration-style: none ;
 }
@@ -436,8 +484,10 @@ main {
 }
 
 .h2-index {
-   
-    text-align: left;
+    font-style: italic;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
     color: white;
     /*background-color: black;
     border: 3px dotted rgb(255, 208, 0);*/
@@ -554,6 +604,8 @@ p{
 
     }
 
+
+
     .objeto-de-lista-peli {
         font-size: 20px;
         padding: 25px;
@@ -650,7 +702,6 @@ p{
 
     }
 
-   
 
     .guardaArticulos {
         flex-direction: column;

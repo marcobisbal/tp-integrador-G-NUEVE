@@ -13,9 +13,12 @@ body {
 
 /* CSS HEADER */
 header {
-    display: inline-block;
+    display: block;
     border: dotted yellow 4px;
+   
 }
+
+
 
 .agrupar {
     width: 90vw;
@@ -28,9 +31,11 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
+    
 }
 
 .menu ul li {
+    text-decoration-style: none;
     padding: 5px 20px;
     font: bold 16px helvetica;
     display: inline-block;
@@ -79,9 +84,17 @@ footer {
     font-size: 20px;
 }
 
+.tmdblogo {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+}
 
+.inicio li {
+    border-radius: 20px;
+    background-color: rgb(255, 196, 0)
 
-
+}
 
 
 
