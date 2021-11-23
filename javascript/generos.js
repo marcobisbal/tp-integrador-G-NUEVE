@@ -62,7 +62,7 @@ fetch (urlGenerosSeries)
         for (let i=0; i<info.length; i++) {
             generosPeli += `<article class = "generosseries" />
             <li>
-            <a href="detalle-generos.html?id=${info[i].id}">${info[i].name} </a>
+            <a href="detalle-generos.html?id=${info[i].id}&genre_ids=${info[i].name}">${info[i].name} </a>
             </li>`
             
             
@@ -80,3 +80,49 @@ fetch (urlGenerosSeries)
     .catch(function(error){
         console.log("Error:"+ error);
     })
+
+    // formulario busqueda
+
+
+
+    let formulario = document.querySelector('form');
+    let inputField = document.querySelector('.search');
+    let message = document.querySelector('.message');
+    
+    formulario.addEventListener('submit', function (evento) {
+        evento.preventDefault()
+        console.log('no me mando');
+    
+        if (inputField.value == "") {
+            message.innerText = "Campo obligatorio.";
+            message.style.color = "red"
+            inputField.style.outline = "1px solid red"
+        
+        } else if (inputField.value.length < 3){
+            message.innerText = "Debe escribir al menos 3 caracteres."
+            message.style.color = "red"
+            inputField.style.outline = "1px solid red"
+        
+        } else {
+            this.submit()
+        }
+    
+    
+    
+    
+    
+    
+    })
+    
+    inputField.addEventListener('focus', function(){
+        message.innerText = '';
+    
+    
+    
+    
+    })
+    
+    
+    
+    
+    
