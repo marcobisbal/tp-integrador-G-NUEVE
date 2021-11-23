@@ -46,20 +46,20 @@ window.addEventListener("load", function () {
         })
 
     // creo el array para rellenar los favoritos
-    let favoritos = [];
+    let favoritosSeries = [];
     //recupero el storage
-    let recuperoStorage = localStorage.getItem('favoritos');
+    let recuperoStorage = localStorage.getItem('favoritosSeries');
 
     //reviso si el id esta en favoritos
     if (recuperoStorage) {
 
-        favoritos = JSON.parse(recuperoStorage);
+        favoritosSeries = JSON.parse(recuperoStorage);
         //console.log(favoritos);
     }
 
     let botonFavoritos = document.querySelector('.botonFavSerie');
 
-    if (favoritos.includes(id)) {
+    if (favoritosSeries.includes(id)) {
         botonFavoritos.innerText = '- Quitar de favoritos ★'
 
     }
@@ -73,13 +73,13 @@ window.addEventListener("load", function () {
         evento.preventDefault();
 
 
-        if (favoritos.includes(id)) {
-            let indice = favoritos.indexOf(id);
-            favoritos.splice(indice, 1)
+        if (favoritosSeries.includes(id)) {
+            let indice = favoritosSeries.indexOf(id);
+            favoritosSeries.splice(indice, 1)
             botonFavoritos.innerText = '+ Agregar a favoritos ★'
 
         } else {
-            favoritos.push(id);
+            favoritosSeries.push(id);
             botonFavoritos.innerText = '- Quitar de favoritos ★'
 
 
@@ -87,9 +87,9 @@ window.addEventListener("load", function () {
         }
 
 
-        let favToString = JSON.stringify(favoritos);
+        let favToString = JSON.stringify(favoritosSeries);
 
-        localStorage.setItem("favoritos", favToString);
+        localStorage.setItem("favoritosSeries", favToString);
 
         console.log(localStorage);
     })

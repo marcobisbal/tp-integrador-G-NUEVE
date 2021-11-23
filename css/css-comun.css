@@ -436,6 +436,16 @@ main {
     font-style: italic
 }
 
+.titulo-serie-fav {
+    display: block;
+    color: rgb(252, 252, 252);
+    font-size: 50px;
+    padding: 50px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-style: italic
+}
+
 /*section con las pelis/series*/
 
 .pelicula-fav {

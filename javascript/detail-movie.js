@@ -41,20 +41,20 @@ window.addEventListener("load", function () {
 
 
     // creo el array para rellenar los favoritos
-    let favoritos = [];
+    let favoritosPeliculas = [];
     //recupero el storage
-    let recuperoStorage = localStorage.getItem('favoritos');
+    let recuperoStorage = localStorage.getItem('favoritosPeliculas');
 
     //reviso si el id esta en favoritos
     if (recuperoStorage) {
 
-        favoritos = JSON.parse(recuperoStorage);
+        favoritosPeliculas = JSON.parse(recuperoStorage);
         //console.log(favoritos);
     }
 
     let botonFavoritos = document.querySelector('.botonFavPeli');
 
-    if (favoritos.includes(id)) {
+    if (favoritosPeliculas.includes(id)) {
         botonFavoritos.innerText = '- Quitar de favoritos ★'
 
     }
@@ -65,13 +65,13 @@ window.addEventListener("load", function () {
         evento.preventDefault();
 
 
-        if (favoritos.includes(id)) {
-            let indice = favoritos.indexOf(id);
-            favoritos.splice(indice, 1)
+        if (favoritosPeliculas.includes(id)) {
+            let indice = favoritosPeliculas.indexOf(id);
+            favoritosPeliculas.splice(indice, 1)
             botonFavoritos.innerText = '+ Agregar a favoritos ★'
 
         } else {
-            favoritos.push(id);
+            favoritosPeliculas.push(id);
             botonFavoritos.innerText = '- Quitar de favoritos ★'
 
 
@@ -81,9 +81,9 @@ window.addEventListener("load", function () {
        
 
 
-        let favToString = JSON.stringify(favoritos);
+        let favToString = JSON.stringify(favoritosPeliculas);
 
-        localStorage.setItem("favoritos", favToString);
+        localStorage.setItem("favoritosPeliculas", favToString);
 
         console.log(localStorage);
 
