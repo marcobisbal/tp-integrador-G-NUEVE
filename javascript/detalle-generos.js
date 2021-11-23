@@ -75,7 +75,7 @@ fetch (urlSerie)
             `<article class ="articulo-serie-genero"> <img src= https://image.tmdb.org/t/p/w154/${info[i].poster_path} alt='${info[i].title}' />
             <h3>${info[i].name} </h3>
             <p>${info[i].first_air_date}</p> 
-            <a href="detail-series.html" class="botonVerMas"> Ver Mas</a>
+            <a href="detail-series.html?id=${info[i].id}" class="botonVerMas"> Ver Mas</a>
             </article>`
             
             

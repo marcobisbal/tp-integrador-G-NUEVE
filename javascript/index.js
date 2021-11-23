@@ -28,8 +28,7 @@ fetch(urlPeli)
 
         guardaArticulosIndexPeli.innerHTML = pelisPopular;
 
-        //let .guardaArticulosIndexPeli = document.querySelector(".guardaArticulosIndexPeli");
-        //guardaArticulosIndexPeli.style.display = flex; 
+        
 
 
 
